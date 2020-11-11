@@ -1,0 +1,16 @@
+channels=8          // Number of channels in template file
+recordingRate=20000 // Sampling rate in [Hz]
+recordingLength=40  // Length of recording in [s]
+spikeTypes=16       // Number of spike types in template file
+spikesPerType=500   // Number of spikes to generate for each type
+spikeLength=20      // Length of a spike in [samples]
+maxAmplitude=500    // If not NaN, spike primary amplitudes normalized to this value [uV]
+amplitudeSweep1=20  // Points for primary sweep
+amplitudeSweep2=20  // Points for secondary sweep
+noiseAmplitude=20   // Standard deviation of zero-mean Gaussian noise in [uV]
+repetitions=10      // Repeat data generation with new positions and noise this many times
+completeness=0.95   // Required cluster completeness
+purity=0.95         // Required cluster purity
+tolerance=2         // Temporal tolerance for spike matching [samples]
+penalty=0           // Parameter k, 0- penalty for spike sorting errors 1- no penalty
+mode=1              // Data generation mode: 1- Amplitude sweep, 2- Channel permutations
